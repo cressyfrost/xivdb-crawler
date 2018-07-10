@@ -1,0 +1,12 @@
+extends layout
+
+block content
+ div.container(class="bd-example-container-body")
+  div.container(id='response' class="p-3 mb-2 bg-dark text-white" style={ height: '400px', 'overflow-y': 'scroll'}) 
+  a(href="#" style={'padding-right':'3px'})
+   button(type="button" class="btn btn-success btn-lg outline" onclick="xivdb()") Start
+  a(href="#")
+   button(type="button" class="btn btn-danger btn-lg outline" onclick="EndLoop()") Stop
+
+
+
