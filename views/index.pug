@@ -2,11 +2,19 @@ extends layout
 
 block content
  div.container(class="bd-example-container-body")
-  div.container(id='response' class="p-3 mb-2 bg-dark text-white" style={ height: '400px', 'overflow-y': 'scroll'}) 
+  div
+   h1(class="display-4 text-white" ) XIVDB API Crawler
+  div(class="bg-dark text-white" style={ height: '9px', 'opacity': '0.7'}) 
+  div(id='responses' class="bg-dark text-white" style={ height: '600px', 'overflow': 'auto',  'opacity': '0.7', 'padding': '20px 50px 20px 20px;'}) 
+  div(class="bg-dark" style={'opacity': '0.7'}) 
+   div(class="bg-dark text-white" style={ height: '9px', 'opacity': '0.7'}) 
+  p
   a(href="#" style={'padding-right':'3px'})
-   button(type="button" class="btn btn-success btn-lg outline" onclick="BeginLoop()") Start
+   button(type="button" class="btn btn-primary btn-lg outline" onclick="BeginLoop()") Initialize
+  a(href="#" style={'padding-right':'3px'})
+   button(type="button" class="btn btn-primary btn-lg outline" onclick="BeginLoop()") Start
   a(href="#")
-   button(type="button" class="btn btn-danger btn-lg outline" onclick="EndLoop()") Stop
+   button(type="button" class="btn btn-danger btn-lg outline" onclick="EndLoop()") End
 
 
 
